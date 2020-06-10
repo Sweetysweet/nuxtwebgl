@@ -7,7 +7,7 @@ import { mapState } from "vuex";
 
 import * as THREE from "three";
 import { TimelineMax } from "gsap";
-import VTKLoader from "@/lib/vtkloader";
+import VTKLoader from "~/lib/vtkloader";
 
 var OrbitControls = require("three-orbit-controls")(THREE);
 let loader = new THREE.VTKLoader();
