@@ -46,7 +46,7 @@ export default {
       scene.background = new THREE.Color(0x000000);
       renderer = new THREE.WebGLRenderer();
       let states = [];
-      loader.load("/female.vtk", function(mesh) {
+      loader.load("~/static/female.vtk", function(mesh) {
         console.log(mesh);
         vm.geometry = new THREE.BufferGeometry();
         let numVertices = mesh.vertices.length;
