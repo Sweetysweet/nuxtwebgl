@@ -1,0 +1,27 @@
+{
+  "name": "webgl-site",
+  "version": "1.0.0",
+  "description": "My first-rate Nuxt.js project",
+  "author": "Sweetysweet",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "gsap": "^3.3.1",
+    "nuxt": "^2.0.0",
+    "split-html-to-chars": "^1.0.5",
+    "three": "^0.117.1",
+    "three-orbit-controls": "^82.1.0",
+    "three-orbitcontrols": "^2.110.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "push-dir": "^0.4.1"
+  }
+}
