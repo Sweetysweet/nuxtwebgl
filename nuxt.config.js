@@ -1,9 +1,3 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/nuxtwebgl/'
-  }
-} : {}
-
 export default {
   mode: 'spa',
   /*
@@ -25,10 +19,10 @@ export default {
   */
   loading: { color: '#fff' },
   router: {
-    middleware: 'pages'
-  },
+    middleware: 'pages',
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxtwebgl/' : '/'
 
-  ...routerBase,
+  },
   build: {
     /*
     ** You can extend webpack config here
