@@ -46,7 +46,7 @@ export default {
       scene.background = new THREE.Color(0x000000);
       renderer = new THREE.WebGLRenderer();
       let states = [];
-      loader.load("female.vtk", function(mesh) {
+      loader.load("/female.vtk", function(mesh) {
         console.log(mesh);
         vm.geometry = new THREE.BufferGeometry();
         let numVertices = mesh.vertices.length;
@@ -101,7 +101,7 @@ export default {
           uniforms: {
             dot: {
               type: "t",
-              value: new THREE.TextureLoader().load("reddot.png")
+              value: new THREE.TextureLoader().load("/reddot.png")
             },
             blend: { type: "f", value: 0 },
             size: { type: "f", value: 2.1 }

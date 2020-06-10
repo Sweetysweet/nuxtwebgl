@@ -1,5 +1,5 @@
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -21,7 +21,6 @@ export default {
   router: {
     middleware: 'pages',
     base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxtwebgl/' : '/'
-
   },
   build: {
     /*
