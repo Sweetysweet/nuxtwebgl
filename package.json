@@ -14,7 +14,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "gsap": "^3.3.1",
+    "gsap": "^3.6.0",
     "nuxt": "^2.0.0",
     "split-html-to-chars": "^1.0.5",
     "three": "^0.117.1",
