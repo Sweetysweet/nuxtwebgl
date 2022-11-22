@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gsap": "^3.3.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "split-html-to-chars": "^1.0.5",
     "three": "^0.117.1",
     "three-orbit-controls": "^82.1.0",
